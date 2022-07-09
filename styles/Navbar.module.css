@@ -1,0 +1,198 @@
+.container {
+    height: 70px;
+    padding: 0px 50px;
+    background-color: rgb(176, 109, 14);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item:nth-child(2) {
+    flex: 3;
+    justify-content: flex-end;
+  }
+  
+  .item:last-child {
+    justify-content: flex-end;
+  }
+  
+  .callButton {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .texts {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .text:first-child {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .text:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .list {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+  }
+  
+  .listItem {
+    margin: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .logo{
+    margin-right: 100px;
+  }
+  
+  .cart{
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .counter{
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #d1411e;
+  }
+  
+  @media screen and (max-width:480px) {
+    .container {
+      height: 50px;
+      padding: 0px 15px;
+    }
+    .callButton {
+      padding: 6px;
+      width: 30px;
+      height: 30px;
+    }
+    .listItem {
+      display: none;
+    }
+  
+    .item:nth-child(1) {
+      flex: 3;
+    }
+    .text:last-child {
+      font-size: 10px;
+    }
+    .text:first-child {
+      font-size: 8px;
+    }
+    .logo{
+      margin-right: 50px;
+      height: 30px;
+    }
+    .cart{
+      width: 25px;
+  }
+  
+  .counter{
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      width: 15px;
+      height: 15px;
+      padding: 3px;
+      font-size: 10px;
+  }
+    
+  }
+
+  @media screen and (min-width: 481px ) and ( max-width: 790px) {
+    .container {
+      height: 50px;
+      padding: 0px 30px;
+      width: 100vw;
+    }
+    
+    .item {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    
+    .item:nth-child(2) {
+      flex: 3;
+      justify-content: flex-end;
+    }
+    
+    .item:last-child {
+      justify-content: flex-end;
+    }
+    
+    .callButton {
+      padding: 6px;
+      width: 30px;
+      height: 30px;
+    }
+    
+    .texts {
+      margin-left: 10px;
+    }
+    
+    .text:first-child {
+      font-size: 8px;
+    }
+    
+    .text:last-child {
+      font-size: 12px;
+    }
+    
+    
+    .listItem {
+      margin: 10px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .logo{
+      width: 100px;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    
+    .cart{
+      width: 20px;
+    }
+    
+    .counter{
+        top: -8px;
+        right: -8px;
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+        font-size: 10px;
+    }
+  }

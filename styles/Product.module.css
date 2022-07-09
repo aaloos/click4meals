@@ -1,0 +1,116 @@
+.container {
+    height: 50vh;
+    display: flex;
+  }
+  
+  .left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .imgContainer {
+    width: 80%;
+    height: 80%;
+    position: relative;
+  }
+  
+  .price {
+    color: #d1411e;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #d1411e;
+  }
+  
+  
+  .quantity {
+    width: 50px;
+    height: 30px;
+  }
+  
+  .button {
+    height: 30px;
+    margin-left: 10px;
+    background-color: #d1411e;
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      height: auto;
+      text-align: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .imgContainer {
+      width: 70vw;
+      height: 70vw;
+    }
+  
+    .title {
+      margin: 5px;
+    }
+  
+  
+    .quantity,
+    .button {
+      height: 50px;
+      padding: 10px 20px;
+    }
+  }
+  @media screen and (min-width: 481px ) and ( max-width: 790px) {
+    .container {
+      height: 50vh;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .imgContainer {
+      width: 30vw;
+      height: 40vw;
+    }
+  
+    .title {
+      margin: 5px;
+      font-size: 20px;
+    }
+    .desc{
+      text-overflow: wrap;
+      font-size: 10px;
+    }
+  
+    .quantity{
+      height: 30px;
+      width: 30%;
+      padding: 10px 20px;
+      margin-top: 5px;
+    }
+    .button {
+      height: 30px;
+      width: 70%;
+      padding: 10px 20px;
+      margin-top: 5px;
+    }
+    .right {
+      margin-top: 20px;
+    }
+    .left{
+      width: 40vw;
+      height: 80%;
+    }
+    .add
+    {
+      display: flex;
+    }
+  }
